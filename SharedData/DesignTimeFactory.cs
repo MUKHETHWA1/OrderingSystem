@@ -19,7 +19,7 @@ namespace SharedData
                 .Build();
 
             var cs = cfg.GetConnectionString("RealTimeDb")
-                ?? "Data Source=LabVM1846780\\SQLEXPRESS;Initial Catalog=OrderSystem;Integrated Security=True;Encrypt=True;Trust Server Certificate=True;";
+                ?? " your connection string";
 
             var opts = new DbContextOptionsBuilder<AppDbContext>()
                 .UseSqlServer(cs)
